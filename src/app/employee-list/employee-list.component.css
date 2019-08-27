@@ -1,0 +1,31 @@
+.employee-name-arrow {
+    float: right;
+    right: 0px;
+}
+
+.employee-name-row {
+    cursor: pointer;
+    height: 60px;
+}
+
+.employee-name-row:hover {
+    background-color: rgb(230, 240, 245);
+}
+
+.table-division {
+    width: 98%;
+    left: 1%;
+}
+
+.search-field {
+    float: right;
+}
+
+.search-input {
+    margin-right: 10px;
+    height: 38px;
+    border-radius: 5px;
+    top: 4px;
+    position: relative;
+    padding-left: 5px;
+}

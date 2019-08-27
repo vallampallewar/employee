@@ -1,0 +1,13 @@
+.navigation-buttons {
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    background-color: aliceblue;
+    color: #3f6eba;
+    border: 1px solid #3f6eba;
+    border-radius: 3px;
+}
+
+.working-button {
+    cursor: pointer;
+}

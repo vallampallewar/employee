@@ -1,0 +1,47 @@
+<header class="landing-header">
+  <span class="back-arrow">
+    <i class='fa fa-angle-left' routerLink="/employees" style="font-size: 24px;"></i>
+  </span>Employee Details of {{employeeDetail.firstName}} {{employeeDetail.lastName}}
+</header>
+<section class="section-page">
+  <span class="row">
+    <span class="col-md-10 employee-id">Employee Id: {{employeeId}}</span>
+    <span class="col-md-2">
+      <span class="flip-to-resume" (click)="employeeResumeOverview()">Flip to Resume</span>
+    </span>
+  </span>
+  <hr class="horizontal-line">
+
+  <img src={{imagePath}} alt="person" class="image-style">
+  <table class="table table-borderless">
+    <tr>
+      <td class="table-heading">First Name :</td>
+      <td>{{employeeDetail.firstName}}</td>
+    </tr>
+    <tr>
+      <td class="table-heading">Last Name :</td>
+      <td>{{employeeDetail.lastName}}</td>
+    </tr>
+    <tr>
+      <td class="table-heading">Address :</td>
+      <td>{{employeeDetail.address}}</td>
+    </tr>
+    <tr>
+      <td class="table-heading">City :</td>
+      <td>{{employeeDetail.city}}</td>
+    </tr>
+    <tr>
+      <td class="table-heading">Postal code :</td>
+      <td>{{employeeDetail.postCode}}</td>
+    </tr>
+    <tr>
+      <td class="table-heading">Phone :</td>
+      <td>{{employeeDetail.phone}}</td>
+    </tr>
+    <tr>
+      <td class="table-heading">Country :</td>
+      <td>{{employeeDetail.country}}</td>
+    </tr>
+  </table>
+  <hr class="horizontal-line">
+</section>

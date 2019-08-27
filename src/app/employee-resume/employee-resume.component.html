@@ -1,0 +1,25 @@
+<header class="landing-header">
+    <span class="back-arrow">
+      <i class='fa fa-angle-left' (click)="navigateToEmployeeDetails()" style="font-size: 24px;"></i>
+    </span>
+    Resume of {{employeeDetail.firstName}} {{employeeDetail.lastName}}
+</header>
+<section class="section-page">
+  <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="margin" [ngClass]="{'active': page == 'info'}"><span (click)="employeeInfo()">Info</span></li>
+          <span class="navigation-style"></span>
+          <li class="margin" [ngClass]="{'active': page == 'project'}"><span (click)="employeeProjects()">Projects</span></li>
+          <span class="navigation-style"></span>
+          <li class="margin" [ngClass]="{'active': page == 'hobbies'}"><span (click)="employeeHobbies()">Hobbies</span></li>
+          <span class="navigation-style"></span>
+          <li class="margin" [ngClass]="{'active': page == 'notes'}"><span (click)="employeeNotes()">Notes</span></li>
+        </ul>
+      </div>
+    </nav>
+    <hr class="horizontal-line">    
+  <router-outlet></router-outlet>
+  <br>
+  <hr class="horizontal-line">
+</section>

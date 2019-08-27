@@ -1,0 +1,35 @@
+.employee-id {
+    font-size: 20px;    
+}
+
+.horizontal-line {
+    right: 2%;
+    width: 96%;
+    position: relative;
+    left: -2%;
+}
+
+.table-heading {
+    float: right;
+    opacity: 0.6;
+}
+
+td {
+    padding-bottom: 0px;
+}
+
+.flip-to-resume {
+    color: blue;
+    cursor: pointer;
+}
+
+.flip-to-resume:hover {    
+    border-bottom: 1px solid blue;
+}
+
+.image-style {
+    height: 100px;
+    width: 120px;
+    left: 42%;
+    position: relative;
+}

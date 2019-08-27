@@ -1,0 +1,25 @@
+<header class="landing-header">
+  <span class="back-arrow"><i class='fa fa-angle-left' routerLink="/home" style="font-size: 24px;"></i></span>Employee List
+</header>
+<section class="section-page table-division">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>List of employees
+              <span class="search-field">
+                <input class="search-input" type="text" [(ngModel)]="searchKey" placeholder="Search">
+                <button class="btn btn-success" (click)="searchEmployee()">Search</button>
+              </span>
+          </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employeeList of employeeListDetails; index as i">
+            <td (click)="employeeDetailsById(i)" class="employee-name-row">
+              <span>{{employeeList.firstName}}</span>
+              <span class="employee-name-arrow"><i class='fa fa-angle-right' style="font-size: 24px;"></i></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</section>

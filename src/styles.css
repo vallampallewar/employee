@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.landing-header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #eaeff7;
+    color: #38404f;
+    border-top: 2px solid #3f6eba;;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.section-page {
+    left: 1%;
+    position: relative;
+    top: 90px;
+    width: 98%;
+    right: 1%;
+}
+
+.back-arrow {
+    float: left;
+    padding-left: 1%;
+    cursor: pointer;
+}
+
+.employee-resume-details {
+    left: 30px;
+    position: relative;
+}
